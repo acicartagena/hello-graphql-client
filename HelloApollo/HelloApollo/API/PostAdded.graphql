@@ -1,0 +1,6 @@
+subscription PostAdded {
+  postAdded {
+    text
+    author
+  }
+}

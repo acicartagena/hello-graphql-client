@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL-frameworks.sh
+${BUILT_PRODUCTS_DIR}/LiveGQL/LiveGQL.framework
+${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework

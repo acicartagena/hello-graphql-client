@@ -1,0 +1,20 @@
+PODS:
+  - LiveGQL (2.0.0):
+    - SocketRocket
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - LiveGQL (~> 2.0.0)
+
+SPEC REPOS:
+  trunk:
+    - LiveGQL
+    - SocketRocket
+
+SPEC CHECKSUMS:
+  LiveGQL: bc97d1f0c5d70e200f27126f863e0be62e732298
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: e2574c5c252165a439b7ef492d189b397ef5af65
+
+COCOAPODS: 1.9.3

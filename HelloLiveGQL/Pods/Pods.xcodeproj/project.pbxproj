@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014AD77F90D932881427CA03A6FC0FBE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA5607281B977E9F73E77EA51BCAFE7 /* CFNetwork.framework */; };
+		0E97EF986ECC5794B7022B19B1C92A62 /* PayloadMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E453EC4E736009D1F98B7640FD56D66 /* PayloadMessages.swift */; };
+		335D7924B2F40CCB5DB5B2993BF2854A /* LiveGQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F928396F163BE1F7622BEF8D9C03F032 /* LiveGQL.swift */; };
+		471E9F43298DB0CD76EDFE48054B3BB1 /* LiveGQL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B4FCE0FA64CEE62EC594EBEDD78E1F6 /* LiveGQL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59CC149F301D09FCC80A2B0932F0E59E /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 75DF5539625B7CBE1E285F512C5AC4A5 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C37346E7147DF2A3AE141E17A0FAA40 /* Pods-HelloLiveGQL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3103C625317AEDA62E70FEC6EFE7B1F2 /* Pods-HelloLiveGQL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63CE7AC8701BC531E2CEF6D57F4F5D69 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7859EE0251E05C1425F0AC93B52F36 /* JSONHelper.swift */; };
+		6DA6BB3ADFEEA69F15754B7DCDA23D87 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CABF25257309CCD6701F2C4310A4E61F /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775F1C423A3967BF887D595780EC2EF7 /* MessageTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD43B05FC1CE293DAE8C5119A95E58 /* MessageTypes.swift */; };
+		8418C369706FA85E6CD2F5DFA0C2B08D /* LiveGQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1480D350D3E22551922BA574771C7F74 /* LiveGQL-dummy.m */; };
+		8C0DB1491D5CEAF7E9413C5EE6765456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */; };
+		9E3E009DF105E0F7FEA0A7E009C20BAD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6686B131596461C96AAADDADF0DC2C0 /* Security.framework */; };
+		A882A0159419C75264A47D920948C62A /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DAF76B00AAE602D6B5499EEEAD2F56 /* SRWebSocket.m */; };
+		AF50E5EE85C0AC0F405275A47FAB4EB1 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EE89912805219F329D520546F218D0 /* SocketRocket-dummy.m */; };
+		B49A22FC78BBAB7488BEA5D095CB70D5 /* Pods-HelloLiveGQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB389EA4938126C0405849A658B4AC /* Pods-HelloLiveGQL-dummy.m */; };
+		C1E4626776707702E4B9A4D0965A025E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */; };
+		C4F1A762548D4E3AA040D9A7932302E4 /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B56D434E3064AD7C4CD58DEF45272162 /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F87AEFC35DDA335BA76F39E203FFDE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */; };
+		FEF069170AAC2930A6DFC9BFBB5A920B /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF84761A9BB49928912615B1A94F6CDB /* SocketRocket.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F1369006DE30B3B9ECA408F322A56A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		94724BEC7314F456AB1FBB0AB4FFFE7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		D88A52745D202EBB25A680E92C185433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE5C3E7032BB3DB04784327F7A43142;
+			remoteInfo = LiveGQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B4FCE0FA64CEE62EC594EBEDD78E1F6 /* LiveGQL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiveGQL-umbrella.h"; sourceTree = "<group>"; };
+		1480D350D3E22551922BA574771C7F74 /* LiveGQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiveGQL-dummy.m"; sourceTree = "<group>"; };
+		1881E8E0D01B6C147132922BC156D2BA /* SocketRocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.release.xcconfig; sourceTree = "<group>"; };
+		1FDB389EA4938126C0405849A658B4AC /* Pods-HelloLiveGQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelloLiveGQL-dummy.m"; sourceTree = "<group>"; };
+		25A7E4B74969F9DC202063DF17AD3A88 /* Pods-HelloLiveGQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloLiveGQL.release.xcconfig"; sourceTree = "<group>"; };
+		2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3103C625317AEDA62E70FEC6EFE7B1F2 /* Pods-HelloLiveGQL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelloLiveGQL-umbrella.h"; sourceTree = "<group>"; };
+		32752270E88315895CA3C2FA9D234870 /* Pods-HelloLiveGQL-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloLiveGQL-frameworks.sh"; sourceTree = "<group>"; };
+		3AD557BAF85F50775012AAB6BF50BC70 /* LiveGQL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiveGQL-prefix.pch"; sourceTree = "<group>"; };
+		3B47A41EB6C323C45252E5CCB0BFD77E /* Pods-HelloLiveGQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloLiveGQL.debug.xcconfig"; sourceTree = "<group>"; };
+		3F11346F4CB41EA355A44956932824B3 /* Pods-HelloLiveGQL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HelloLiveGQL.modulemap"; sourceTree = "<group>"; };
+		40C79B389B3BD2DC133815E05B0F21DC /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		4E453EC4E736009D1F98B7640FD56D66 /* PayloadMessages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PayloadMessages.swift; path = Source/Classes/PayloadMessages.swift; sourceTree = "<group>"; };
+		4FE3723354A4328384FDB5F7901AEAF4 /* SocketRocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.debug.xcconfig; sourceTree = "<group>"; };
+		53DAF76B00AAE602D6B5499EEEAD2F56 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		5CA5607281B977E9F73E77EA51BCAFE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		5E8B004A6E87A320E4373A3EAD9E83C9 /* LiveGQL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LiveGQL.modulemap; sourceTree = "<group>"; };
+		5F83184F8C3B09B1BA35F2ECF7EF41DB /* LiveGQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiveGQL.debug.xcconfig; sourceTree = "<group>"; };
+		6E2C4E29631D0DD506705017F49D8EF5 /* Pods-HelloLiveGQL-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HelloLiveGQL-acknowledgements.markdown"; sourceTree = "<group>"; };
+		75920E4F69289E90DA3B98431AD69272 /* LiveGQL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LiveGQL-Info.plist"; sourceTree = "<group>"; };
+		75DF5539625B7CBE1E285F512C5AC4A5 /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		76634E42FA82FC40EBDEBCE3C169B14F /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SocketRocket.modulemap; sourceTree = "<group>"; };
+		7CAD43B05FC1CE293DAE8C5119A95E58 /* MessageTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageTypes.swift; path = Source/Classes/MessageTypes.swift; sourceTree = "<group>"; };
+		81759A9A7268B16F8611D0A2FD182845 /* LiveGQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiveGQL.release.xcconfig; sourceTree = "<group>"; };
+		85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketRocket.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7859EE0251E05C1425F0AC93B52F36 /* JSONHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHelper.swift; path = Source/Classes/JSONHelper.swift; sourceTree = "<group>"; };
+		9297376A8CF1FFB072885D81F658FA37 /* SocketRocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SocketRocket-Info.plist"; sourceTree = "<group>"; };
+		968A8CD4C27499627425B56EB84ECDB5 /* Pods-HelloLiveGQL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelloLiveGQL-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B56D434E3064AD7C4CD58DEF45272162 /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
+		B6686B131596461C96AAADDADF0DC2C0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CABF25257309CCD6701F2C4310A4E61F /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
+		CF84761A9BB49928912615B1A94F6CDB /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8536630C6A8B68B1B9ADE52E239F2A3 /* LiveGQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiveGQL.framework; path = LiveGQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2970756D92AB7E650000BBA5322324 /* Pods-HelloLiveGQL-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelloLiveGQL-acknowledgements.plist"; sourceTree = "<group>"; };
+		E479418C11AED6C9FA7ED5D4CED362AA /* Pods_HelloLiveGQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HelloLiveGQL.framework; path = "Pods-HelloLiveGQL.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EE89912805219F329D520546F218D0 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		F928396F163BE1F7622BEF8D9C03F032 /* LiveGQL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveGQL.swift; path = Source/Classes/LiveGQL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B8B646514CF01A9DE82C298344DAE21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014AD77F90D932881427CA03A6FC0FBE /* CFNetwork.framework in Frameworks */,
+				8C0DB1491D5CEAF7E9413C5EE6765456 /* Foundation.framework in Frameworks */,
+				9E3E009DF105E0F7FEA0A7E009C20BAD /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A675C3D4B9F35796B8AC90415FAD8117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87AEFC35DDA335BA76F39E203FFDE6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8A933A65CF4456582FCEDECB547881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E4626776707702E4B9A4D0965A025E /* Foundation.framework in Frameworks */,
+				FEF069170AAC2930A6DFC9BFBB5A920B /* SocketRocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F3E6A1737F6BAC5C6BB2A9EAE1C413 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF84761A9BB49928912615B1A94F6CDB /* SocketRocket.framework */,
+				84F34EABADC4425D0B6A066617C46D81 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33E45C01EAD828E0C75AF6E0BF8DCD2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FD473DBDEF38AD32136A87A67D98967 /* LiveGQL */,
+				C94B0DF846F874A3C48AEC6FAF6DF4CA /* SocketRocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FD473DBDEF38AD32136A87A67D98967 /* LiveGQL */ = {
+			isa = PBXGroup;
+			children = (
+				8E7859EE0251E05C1425F0AC93B52F36 /* JSONHelper.swift */,
+				F928396F163BE1F7622BEF8D9C03F032 /* LiveGQL.swift */,
+				7CAD43B05FC1CE293DAE8C5119A95E58 /* MessageTypes.swift */,
+				4E453EC4E736009D1F98B7640FD56D66 /* PayloadMessages.swift */,
+				BE3F55E2763AB6C4E1AD77A24F1B36C3 /* Support Files */,
+			);
+			name = LiveGQL;
+			path = LiveGQL;
+			sourceTree = "<group>";
+		};
+		66360603BBCDEF3B9A2D1A334F0B8E05 /* Pods-HelloLiveGQL */ = {
+			isa = PBXGroup;
+			children = (
+				3F11346F4CB41EA355A44956932824B3 /* Pods-HelloLiveGQL.modulemap */,
+				6E2C4E29631D0DD506705017F49D8EF5 /* Pods-HelloLiveGQL-acknowledgements.markdown */,
+				DA2970756D92AB7E650000BBA5322324 /* Pods-HelloLiveGQL-acknowledgements.plist */,
+				1FDB389EA4938126C0405849A658B4AC /* Pods-HelloLiveGQL-dummy.m */,
+				32752270E88315895CA3C2FA9D234870 /* Pods-HelloLiveGQL-frameworks.sh */,
+				968A8CD4C27499627425B56EB84ECDB5 /* Pods-HelloLiveGQL-Info.plist */,
+				3103C625317AEDA62E70FEC6EFE7B1F2 /* Pods-HelloLiveGQL-umbrella.h */,
+				3B47A41EB6C323C45252E5CCB0BFD77E /* Pods-HelloLiveGQL.debug.xcconfig */,
+				25A7E4B74969F9DC202063DF17AD3A88 /* Pods-HelloLiveGQL.release.xcconfig */,
+			);
+			name = "Pods-HelloLiveGQL";
+			path = "Target Support Files/Pods-HelloLiveGQL";
+			sourceTree = "<group>";
+		};
+		84F34EABADC4425D0B6A066617C46D81 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5CA5607281B977E9F73E77EA51BCAFE7 /* CFNetwork.framework */,
+				2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */,
+				B6686B131596461C96AAADDADF0DC2C0 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9EE9FE3F257F4585BB005632E24E464D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66360603BBCDEF3B9A2D1A334F0B8E05 /* Pods-HelloLiveGQL */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BE3F55E2763AB6C4E1AD77A24F1B36C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E8B004A6E87A320E4373A3EAD9E83C9 /* LiveGQL.modulemap */,
+				1480D350D3E22551922BA574771C7F74 /* LiveGQL-dummy.m */,
+				75920E4F69289E90DA3B98431AD69272 /* LiveGQL-Info.plist */,
+				3AD557BAF85F50775012AAB6BF50BC70 /* LiveGQL-prefix.pch */,
+				0B4FCE0FA64CEE62EC594EBEDD78E1F6 /* LiveGQL-umbrella.h */,
+				5F83184F8C3B09B1BA35F2ECF7EF41DB /* LiveGQL.debug.xcconfig */,
+				81759A9A7268B16F8611D0A2FD182845 /* LiveGQL.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LiveGQL";
+			sourceTree = "<group>";
+		};
+		C80ED3ECCC0DF88A11FF562B2BA14E6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8536630C6A8B68B1B9ADE52E239F2A3 /* LiveGQL.framework */,
+				E479418C11AED6C9FA7ED5D4CED362AA /* Pods_HelloLiveGQL.framework */,
+				85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94B0DF846F874A3C48AEC6FAF6DF4CA /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				CABF25257309CCD6701F2C4310A4E61F /* SocketRocket.h */,
+				75DF5539625B7CBE1E285F512C5AC4A5 /* SRWebSocket.h */,
+				53DAF76B00AAE602D6B5499EEEAD2F56 /* SRWebSocket.m */,
+				CEEAAC2B2D455105543BE6D64BFDF840 /* Support Files */,
+			);
+			name = SocketRocket;
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		CEEAAC2B2D455105543BE6D64BFDF840 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76634E42FA82FC40EBDEBCE3C169B14F /* SocketRocket.modulemap */,
+				F1EE89912805219F329D520546F218D0 /* SocketRocket-dummy.m */,
+				9297376A8CF1FFB072885D81F658FA37 /* SocketRocket-Info.plist */,
+				40C79B389B3BD2DC133815E05B0F21DC /* SocketRocket-prefix.pch */,
+				B56D434E3064AD7C4CD58DEF45272162 /* SocketRocket-umbrella.h */,
+				4FE3723354A4328384FDB5F7901AEAF4 /* SocketRocket.debug.xcconfig */,
+				1881E8E0D01B6C147132922BC156D2BA /* SocketRocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				09F3E6A1737F6BAC5C6BB2A9EAE1C413 /* Frameworks */,
+				33E45C01EAD828E0C75AF6E0BF8DCD2E /* Pods */,
+				C80ED3ECCC0DF88A11FF562B2BA14E6F /* Products */,
+				9EE9FE3F257F4585BB005632E24E464D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1014D31BE182E4704AC151087554A7DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C37346E7147DF2A3AE141E17A0FAA40 /* Pods-HelloLiveGQL-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FDADAC377ACA178633637D052573AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A762548D4E3AA040D9A7932302E4 /* SocketRocket-umbrella.h in Headers */,
+				6DA6BB3ADFEEA69F15754B7DCDA23D87 /* SocketRocket.h in Headers */,
+				59CC149F301D09FCC80A2B0932F0E59E /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3636FE521C05561AD94260C80DC99A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471E9F43298DB0CD76EDFE48054B3BB1 /* LiveGQL-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6274279D5BC8B7658224A55941F0F1 /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				98FDADAC377ACA178633637D052573AA /* Headers */,
+				12A86211A75236891E98872134CE7D4B /* Sources */,
+				4B8B646514CF01A9DE82C298344DAE21 /* Frameworks */,
+				645C4DD2A373929F614B43388860C32B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = 85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		744559C6B50FF8348092E42B461133E6 /* Pods-HelloLiveGQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73506EFC3244AD95055347FB80420977 /* Build configuration list for PBXNativeTarget "Pods-HelloLiveGQL" */;
+			buildPhases = (
+				1014D31BE182E4704AC151087554A7DF /* Headers */,
+				29BAF56C9E9634E5AABDC0DD896AEBB0 /* Sources */,
+				A675C3D4B9F35796B8AC90415FAD8117 /* Frameworks */,
+				C9BEE8D22A39B3CCA0F42450F9BE4573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				066C8A17ABC1C30DB7AC3D4FBFEC7EBE /* PBXTargetDependency */,
+				D8CE26A50FCDFF97C06D856812EE3C64 /* PBXTargetDependency */,
+			);
+			name = "Pods-HelloLiveGQL";
+			productName = "Pods-HelloLiveGQL";
+			productReference = E479418C11AED6C9FA7ED5D4CED362AA /* Pods_HelloLiveGQL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDE5C3E7032BB3DB04784327F7A43142 /* LiveGQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A75BC5481F0E6F3645461385F8F708 /* Build configuration list for PBXNativeTarget "LiveGQL" */;
+			buildPhases = (
+				E3636FE521C05561AD94260C80DC99A6 /* Headers */,
+				AECF31D35276956FC35A560E3CDA2264 /* Sources */,
+				CA8A933A65CF4456582FCEDECB547881 /* Frameworks */,
+				359447BBEF61780005A82F3B2B9A9731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54AFC2AFEF25B196886A3F974DE2D8AF /* PBXTargetDependency */,
+			);
+			name = LiveGQL;
+			productName = LiveGQL;
+			productReference = D8536630C6A8B68B1B9ADE52E239F2A3 /* LiveGQL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C80ED3ECCC0DF88A11FF562B2BA14E6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE5C3E7032BB3DB04784327F7A43142 /* LiveGQL */,
+				744559C6B50FF8348092E42B461133E6 /* Pods-HelloLiveGQL */,
+				1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		359447BBEF61780005A82F3B2B9A9731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645C4DD2A373929F614B43388860C32B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEE8D22A39B3CCA0F42450F9BE4573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12A86211A75236891E98872134CE7D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF50E5EE85C0AC0F405275A47FAB4EB1 /* SocketRocket-dummy.m in Sources */,
+				A882A0159419C75264A47D920948C62A /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BAF56C9E9634E5AABDC0DD896AEBB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49A22FC78BBAB7488BEA5D095CB70D5 /* Pods-HelloLiveGQL-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECF31D35276956FC35A560E3CDA2264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CE7AC8701BC531E2CEF6D57F4F5D69 /* JSONHelper.swift in Sources */,
+				8418C369706FA85E6CD2F5DFA0C2B08D /* LiveGQL-dummy.m in Sources */,
+				335D7924B2F40CCB5DB5B2993BF2854A /* LiveGQL.swift in Sources */,
+				775F1C423A3967BF887D595780EC2EF7 /* MessageTypes.swift in Sources */,
+				0E97EF986ECC5794B7022B19B1C92A62 /* PayloadMessages.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		066C8A17ABC1C30DB7AC3D4FBFEC7EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiveGQL;
+			target = CDE5C3E7032BB3DB04784327F7A43142 /* LiveGQL */;
+			targetProxy = D88A52745D202EBB25A680E92C185433 /* PBXContainerItemProxy */;
+		};
+		54AFC2AFEF25B196886A3F974DE2D8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = 5F1369006DE30B3B9ECA408F322A56A2 /* PBXContainerItemProxy */;
+		};
+		D8CE26A50FCDFF97C06D856812EE3C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = 94724BEC7314F456AB1FBB0AB4FFFE7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09B155F061A75F10AF5DA448C940DD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81759A9A7268B16F8611D0A2FD182845 /* LiveGQL.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiveGQL/LiveGQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiveGQL/LiveGQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LiveGQL/LiveGQL.modulemap";
+				PRODUCT_MODULE_NAME = LiveGQL;
+				PRODUCT_NAME = LiveGQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E4A7E02DCE7E9899C3955101D9C451D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE3723354A4328384FDB5F7901AEAF4 /* SocketRocket.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/SocketRocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				PRODUCT_MODULE_NAME = SocketRocket;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DA40DFFD413ACA9EE334D3F1FF4E205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1881E8E0D01B6C147132922BC156D2BA /* SocketRocket.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/SocketRocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				PRODUCT_MODULE_NAME = SocketRocket;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		606CA999B2E5B87CC850C0FB40B1040C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B47A41EB6C323C45252E5CCB0BFD77E /* Pods-HelloLiveGQL.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F37823F78CAF5FD7492D0B31AD43166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A7E4B74969F9DC202063DF17AD3A88 /* Pods-HelloLiveGQL.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A30B058C12F9BC8E3ECD2E6D0E5647ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F83184F8C3B09B1BA35F2ECF7EF41DB /* LiveGQL.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiveGQL/LiveGQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiveGQL/LiveGQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LiveGQL/LiveGQL.modulemap";
+				PRODUCT_MODULE_NAME = LiveGQL;
+				PRODUCT_NAME = LiveGQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73506EFC3244AD95055347FB80420977 /* Build configuration list for PBXNativeTarget "Pods-HelloLiveGQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606CA999B2E5B87CC850C0FB40B1040C /* Debug */,
+				9F37823F78CAF5FD7492D0B31AD43166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6274279D5BC8B7658224A55941F0F1 /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4A7E02DCE7E9899C3955101D9C451D /* Debug */,
+				4DA40DFFD413ACA9EE334D3F1FF4E205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A75BC5481F0E6F3645461385F8F708 /* Build configuration list for PBXNativeTarget "LiveGQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30B058C12F9BC8E3ECD2E6D0E5647ED /* Debug */,
+				09B155F061A75F10AF5DA448C940DD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

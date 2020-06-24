@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53698E7124A31751004C4C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E7024A31751004C4C49 /* AppDelegate.swift */; };
+		53698E7324A31751004C4C49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E7224A31751004C4C49 /* SceneDelegate.swift */; };
+		53698E7524A31751004C4C49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E7424A31751004C4C49 /* ViewController.swift */; };
+		53698E7824A31751004C4C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53698E7624A31751004C4C49 /* Main.storyboard */; };
+		53698E7A24A31753004C4C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53698E7924A31753004C4C49 /* Assets.xcassets */; };
+		53698E7D24A31753004C4C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53698E7B24A31753004C4C49 /* LaunchScreen.storyboard */; };
+		53698E8724A317B2004C4C49 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E8424A317B2004C4C49 /* Post.swift */; };
+		53698E8824A317B2004C4C49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E8524A317B2004C4C49 /* PostCell.swift */; };
+		53698E8924A317B2004C4C49 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E8624A317B2004C4C49 /* ViewModel.swift */; };
+		53698E8B24A31830004C4C49 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E8A24A31830004C4C49 /* PostService.swift */; };
+		53698E8D24A33DEA004C4C49 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E8C24A33DEA004C4C49 /* Networking.swift */; };
+		53698E8F24A33F7F004C4C49 /* PostAddedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53698E8E24A33F7F004C4C49 /* PostAddedResponse.swift */; };
+		75CA68EF872E671B7F9C679F /* Pods_HelloLiveGQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575588C9AC7A6239F923B341 /* Pods_HelloLiveGQL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53698E6D24A31751004C4C49 /* HelloLiveGQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloLiveGQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53698E7024A31751004C4C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53698E7224A31751004C4C49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		53698E7424A31751004C4C49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53698E7724A31751004C4C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53698E7924A31753004C4C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53698E7C24A31753004C4C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53698E7E24A31753004C4C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53698E8424A317B2004C4C49 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		53698E8524A317B2004C4C49 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		53698E8624A317B2004C4C49 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		53698E8A24A31830004C4C49 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		53698E8C24A33DEA004C4C49 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		53698E8E24A33F7F004C4C49 /* PostAddedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAddedResponse.swift; sourceTree = "<group>"; };
+		575588C9AC7A6239F923B341 /* Pods_HelloLiveGQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloLiveGQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CCF26544C5C4A9BB25349D /* Pods-HelloLiveGQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloLiveGQL.release.xcconfig"; path = "Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL.release.xcconfig"; sourceTree = "<group>"; };
+		ED8BEB61E9BBC18B4A5B3027 /* Pods-HelloLiveGQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloLiveGQL.debug.xcconfig"; path = "Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53698E6A24A31751004C4C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CA68EF872E671B7F9C679F /* Pods_HelloLiveGQL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53698E6424A31751004C4C49 = {
+			isa = PBXGroup;
+			children = (
+				53698E6F24A31751004C4C49 /* HelloLiveGQL */,
+				53698E6E24A31751004C4C49 /* Products */,
+				CD65F6C65CAA624C9CBA61FE /* Pods */,
+				A51D4E8F33EF04505F4636BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53698E6E24A31751004C4C49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53698E6D24A31751004C4C49 /* HelloLiveGQL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53698E6F24A31751004C4C49 /* HelloLiveGQL */ = {
+			isa = PBXGroup;
+			children = (
+				53698E7024A31751004C4C49 /* AppDelegate.swift */,
+				53698E7224A31751004C4C49 /* SceneDelegate.swift */,
+				53698E7424A31751004C4C49 /* ViewController.swift */,
+				53698E8424A317B2004C4C49 /* Post.swift */,
+				53698E8524A317B2004C4C49 /* PostCell.swift */,
+				53698E8624A317B2004C4C49 /* ViewModel.swift */,
+				53698E8A24A31830004C4C49 /* PostService.swift */,
+				53698E8C24A33DEA004C4C49 /* Networking.swift */,
+				53698E8E24A33F7F004C4C49 /* PostAddedResponse.swift */,
+				53698E7624A31751004C4C49 /* Main.storyboard */,
+				53698E7924A31753004C4C49 /* Assets.xcassets */,
+				53698E7B24A31753004C4C49 /* LaunchScreen.storyboard */,
+				53698E7E24A31753004C4C49 /* Info.plist */,
+			);
+			path = HelloLiveGQL;
+			sourceTree = "<group>";
+		};
+		A51D4E8F33EF04505F4636BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				575588C9AC7A6239F923B341 /* Pods_HelloLiveGQL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD65F6C65CAA624C9CBA61FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED8BEB61E9BBC18B4A5B3027 /* Pods-HelloLiveGQL.debug.xcconfig */,
+				E1CCF26544C5C4A9BB25349D /* Pods-HelloLiveGQL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53698E6C24A31751004C4C49 /* HelloLiveGQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53698E8124A31753004C4C49 /* Build configuration list for PBXNativeTarget "HelloLiveGQL" */;
+			buildPhases = (
+				87FFE2DFD1BD5F23058CDC9C /* [CP] Check Pods Manifest.lock */,
+				53698E6924A31751004C4C49 /* Sources */,
+				53698E6A24A31751004C4C49 /* Frameworks */,
+				53698E6B24A31751004C4C49 /* Resources */,
+				B3D53103B400BE93306480EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloLiveGQL;
+			productName = HelloLiveGQL;
+			productReference = 53698E6D24A31751004C4C49 /* HelloLiveGQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53698E6524A31751004C4C49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Cartagena (Contractor) Angela";
+				TargetAttributes = {
+					53698E6C24A31751004C4C49 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 53698E6824A31751004C4C49 /* Build configuration list for PBXProject "HelloLiveGQL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53698E6424A31751004C4C49;
+			productRefGroup = 53698E6E24A31751004C4C49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53698E6C24A31751004C4C49 /* HelloLiveGQL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53698E6B24A31751004C4C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53698E7D24A31753004C4C49 /* LaunchScreen.storyboard in Resources */,
+				53698E7A24A31753004C4C49 /* Assets.xcassets in Resources */,
+				53698E7824A31751004C4C49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87FFE2DFD1BD5F23058CDC9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloLiveGQL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D53103B400BE93306480EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloLiveGQL/Pods-HelloLiveGQL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53698E6924A31751004C4C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53698E7524A31751004C4C49 /* ViewController.swift in Sources */,
+				53698E7124A31751004C4C49 /* AppDelegate.swift in Sources */,
+				53698E8B24A31830004C4C49 /* PostService.swift in Sources */,
+				53698E8D24A33DEA004C4C49 /* Networking.swift in Sources */,
+				53698E7324A31751004C4C49 /* SceneDelegate.swift in Sources */,
+				53698E8724A317B2004C4C49 /* Post.swift in Sources */,
+				53698E8924A317B2004C4C49 /* ViewModel.swift in Sources */,
+				53698E8F24A33F7F004C4C49 /* PostAddedResponse.swift in Sources */,
+				53698E8824A317B2004C4C49 /* PostCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53698E7624A31751004C4C49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53698E7724A31751004C4C49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53698E7B24A31753004C4C49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53698E7C24A31753004C4C49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53698E7F24A31753004C4C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53698E8024A31753004C4C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53698E8224A31753004C4C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED8BEB61E9BBC18B4A5B3027 /* Pods-HelloLiveGQL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDDZUX9WJ8;
+				INFOPLIST_FILE = HelloLiveGQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.HelloLiveGQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53698E8324A31753004C4C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CCF26544C5C4A9BB25349D /* Pods-HelloLiveGQL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDDZUX9WJ8;
+				INFOPLIST_FILE = HelloLiveGQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.HelloLiveGQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53698E6824A31751004C4C49 /* Build configuration list for PBXProject "HelloLiveGQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53698E7F24A31753004C4C49 /* Debug */,
+				53698E8024A31753004C4C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53698E8124A31753004C4C49 /* Build configuration list for PBXNativeTarget "HelloLiveGQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53698E8224A31753004C4C49 /* Debug */,
+				53698E8324A31753004C4C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53698E6524A31751004C4C49 /* Project object */;
+}
