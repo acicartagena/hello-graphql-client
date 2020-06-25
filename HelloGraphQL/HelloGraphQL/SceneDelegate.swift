@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  HelloGraphQL
+//  HelloApollo
 //
-//  Created by Cartagena (Contractor) Angela on 25/6/20.
+//  Created by Cartagena (Contractor) Angela on 23/6/20.
 //  Copyright © 2020 Cartagena (Contractor) Angela. All rights reserved.
 //
 
