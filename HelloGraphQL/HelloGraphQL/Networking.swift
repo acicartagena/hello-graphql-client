@@ -75,7 +75,6 @@ class Networking {
         self.subscription = subscription
         do {
             let data = try JSONEncoder().encode(message)
-//            let encodedMessage = String(data: data, encoding: .utf8)
             guard isConnected else {
                 writeQueue.append(data)
                 return
@@ -92,17 +91,15 @@ class Networking {
         let message = SubscriptionMessage(id: subscription.identifier, type: "stop", payload: SubscriptionMessage.Payload.empty)
         self.subscription = subscription
         do {
-                    let data = try JSONEncoder().encode(message)
-            
-        //            let encodedMessage = String(data: data, encoding: .utf8)
+            let data = try JSONEncoder().encode(message)
             guard isConnected else {
                 writeQueue.append(data)
                 return
             }
-                    socket.write(data: data)
-                } catch let error {
-                    print(error)
-                }
+            socket.write(data: data)
+        } catch let error {
+            print(error)
+        }
     }
 }
 
