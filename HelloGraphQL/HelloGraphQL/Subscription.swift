@@ -17,7 +17,9 @@ struct PostAddedSubscriptionData: Decodable {
     let postAdded: PostAdded
 }
 
-enum Subscription {
+struct EmptyStruct: Decodable { }
+
+enum Subscription: GraphQLSubscription {
     case postAdded(messageHandler: (Result<PostAddedSubscriptionData, HelloGraphQLError>) -> Void)
     
     var identifier: String {
@@ -27,11 +29,18 @@ enum Subscription {
     }
     
     func handle(message: Data) throws {
+        let subscriptionIdentifier = try identifier(from: message)
         switch self {
         case .postAdded(let handler):
+            guard subscriptionIdentifier == self.identifier else { return }
             let decoded = try JSONDecoder().decode(MessageResponse<PostAddedSubscriptionData>.self, from: message)
             handler(.success(decoded.payload.data))
         }
+    }
+    
+    private func identifier(from message: Data) throws -> String? {
+        let decodedContainer = try JSONDecoder().decode(MessageResponse<EmptyStruct>.self, from: message)
+        return decodedContainer.id
     }
     
     func handle(error: Error) {

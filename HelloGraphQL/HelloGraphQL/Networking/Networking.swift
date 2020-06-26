@@ -9,13 +9,45 @@
 import Foundation
 import Starscream
 
+protocol GraphQLSubscription {
+    var identifier: String { get }
+    func handle(message: Data) throws
+    func handle(error: Error)
+}
+
+struct AnyGraphQLSubscription: GraphQLSubscription {
+    private let subscription: GraphQLSubscription
+    
+    init(_ subscription: GraphQLSubscription) {
+        self.subscription = subscription
+    }
+    
+    var identifier: String {
+        subscription.identifier
+    }
+    
+    func handle(message: Data) throws {
+        try subscription.handle(message: message)
+    }
+    
+    func handle(error: Error) {
+        subscription.handle(error: error)
+    }
+}
+
+extension AnyGraphQLSubscription: Equatable {
+    static func ==(lhs: AnyGraphQLSubscription, rhs: AnyGraphQLSubscription) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+}
+
 class Networking {
     
     private let socket: WebSocket
     private var isConnected = false
     private var writeQueue: [Data] = []
     
-    private var subscriptions: [Subscription] = []
+    private var subscriptions: [AnyGraphQLSubscription] = []
     
     init(socket url: URL = URL(string: "ws://localhost:4000/graphql")!) {
         var request = URLRequest(url: url)
@@ -26,15 +58,15 @@ class Networking {
         socket.connect()
     }
     
-    func subscribe(to subscription: Subscription, with graphQL: String) {
+    func subscribe(to subscription: GraphQLSubscription, with graphQL: String) {
         let request = MessageRequest(id: subscription.identifier, type: .start, query: graphQL)
-        subscriptions.append(subscription)
+        subscriptions.append(AnyGraphQLSubscription(subscription))
         send(request: request)
     }
     
-    func unsubscribe(from subscription: Subscription) {
+    func unsubscribe(from subscription: GraphQLSubscription) {
         let request = MessageRequest(id: subscription.identifier, type: .stop, query: nil)
-        subscriptions.removeAll { $0 == subscription }
+        subscriptions.removeAll { $0 == AnyGraphQLSubscription(subscription) }
         send(request: request)
     }
     
