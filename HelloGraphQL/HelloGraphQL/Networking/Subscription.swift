@@ -17,7 +17,7 @@ struct PostAddedSubscriptionData: Decodable {
     let postAdded: PostAdded
 }
 
-enum Subscription: Equatable {
+enum Subscription {
     case postAdded(messageHandler: (Result<PostAddedSubscriptionData, HelloGraphQLError>) -> Void)
     
     var identifier: String {
@@ -26,15 +26,11 @@ enum Subscription: Equatable {
         }
     }
     
-    static func ==(lhs: Subscription, rhs: Subscription) -> Bool {
-        return lhs.identifier == rhs.identifier
-    }
-    
     func handle(message: Data) throws {
         switch self {
         case .postAdded(let handler):
-            let decoded = try JSONDecoder().decode(PostAddedSubscriptionData.self, from: message)
-            handler(.success(decoded))
+            let decoded = try JSONDecoder().decode(MessageResponse<PostAddedSubscriptionData>.self, from: message)
+            handler(.success(decoded.payload.data))
         }
     }
     
@@ -43,5 +39,11 @@ enum Subscription: Equatable {
         case .postAdded(let handler):
             handler(.failure(.decoding(error)))
         }
+    }
+}
+
+extension Subscription: Equatable {
+    static func ==(lhs: Subscription, rhs: Subscription) -> Bool {
+        return lhs.identifier == rhs.identifier
     }
 }
