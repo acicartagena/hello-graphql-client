@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5302F39F24A5B85B00780BF9 /* SubscriptionMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302F39E24A5B85B00780BF9 /* SubscriptionMessage.swift */; };
+		5302F3A324A5B88C00780BF9 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302F3A224A5B88C00780BF9 /* Subscription.swift */; };
 		53ED3C5F24A42C050044CB61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED3C5E24A42C050044CB61 /* AppDelegate.swift */; };
 		53ED3C6124A42C050044CB61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED3C6024A42C050044CB61 /* SceneDelegate.swift */; };
 		53ED3C6324A42C050044CB61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED3C6224A42C050044CB61 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5302F39E24A5B85B00780BF9 /* SubscriptionMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionMessage.swift; sourceTree = "<group>"; };
+		5302F3A224A5B88C00780BF9 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		53ED3C5B24A42C050044CB61 /* HelloGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53ED3C5E24A42C050044CB61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53ED3C6024A42C050044CB61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5302F39D24A5B84D00780BF9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5302F39E24A5B85B00780BF9 /* SubscriptionMessage.swift */,
+				5302F3A224A5B88C00780BF9 /* Subscription.swift */,
+				53ED3C7D24A47C040044CB61 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		53ED3C5224A42C050044CB61 = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +91,7 @@
 				53ED3C7524A4613B0044CB61 /* PostCell.swift */,
 				53ED3C7624A4613B0044CB61 /* PostService.swift */,
 				53ED3C7F24A49ECB0044CB61 /* PostAddedResponse.swift */,
-				53ED3C7D24A47C040044CB61 /* Networking.swift */,
+				5302F39D24A5B84D00780BF9 /* Networking */,
 				53ED3C7724A4613B0044CB61 /* ViewModel.swift */,
 				53ED3C6424A42C050044CB61 /* Main.storyboard */,
 				53ED3C6724A42C060044CB61 /* Assets.xcassets */,
@@ -166,9 +180,11 @@
 			files = (
 				53ED3C7A24A4613B0044CB61 /* PostService.swift in Sources */,
 				53ED3C6324A42C050044CB61 /* ViewController.swift in Sources */,
+				5302F39F24A5B85B00780BF9 /* SubscriptionMessage.swift in Sources */,
 				53ED3C5F24A42C050044CB61 /* AppDelegate.swift in Sources */,
 				53ED3C7E24A47C040044CB61 /* Networking.swift in Sources */,
 				53ED3C6124A42C050044CB61 /* SceneDelegate.swift in Sources */,
+				5302F3A324A5B88C00780BF9 /* Subscription.swift in Sources */,
 				53ED3C7B24A4613B0044CB61 /* ViewModel.swift in Sources */,
 				53ED3C7C24A4613B0044CB61 /* Post.swift in Sources */,
 				53ED3C8024A49ECB0044CB61 /* PostAddedResponse.swift in Sources */,

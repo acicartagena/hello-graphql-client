@@ -9,9 +9,9 @@ enum HelloGraphQLError: Error {
 }
 
 extension Post {
-    init(response: PostAddedResponse) {
-        text = response.payload.data.postAdded.text
-        author = response.payload.data.postAdded.author
+    init(response: PostAddedSubscriptionData) {
+        text = response.postAdded.text
+        author = response.postAdded.author
     }
 }
 
@@ -23,9 +23,10 @@ protocol PostActions {
 class PostService: PostActions {
     
     let networking = Networking()
+    var postAddedSubscription: Subscription?
     
     deinit {
-        networking.unsubscribe()
+        postAddedSubscription.map { networking.unsubscribe(from: $0) }
     }
     
     func fetchPosts(completion: @escaping(Result<[Post], HelloGraphQLError>) -> Void) {
@@ -41,7 +42,7 @@ class PostService: PostActions {
                     }
                 }
                 """
-        let eventHandler: (Result<PostAddedResponse, HelloGraphQLError>) -> Void =  { result in
+        let eventHandler: (Result<PostAddedSubscriptionData, HelloGraphQLError>) -> Void =  { result in
                    switch result {
                    case .success(let response):
                        eventHandler(.success(Post(response: response)))
@@ -49,8 +50,8 @@ class PostService: PostActions {
                        eventHandler(.failure(error))
                    }
                }
-        let subscription = Subscription(graphQL: graphQL, type: .postAdded(eventHandler: eventHandler))
-        
-        networking.subscribe(to: subscription)
+        let subscription: Subscription = .postAdded(messageHandler: eventHandler)
+        postAddedSubscription = subscription
+        networking.subscribe(to: subscription, with: graphQL)
     }
 }
